@@ -1,0 +1,128 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset='UTF-8'/>
+  <meta name='twitter:site' content='@MaptimeDC' />
+  <meta property='og:site_name' content='MaptimeDC' />
+  <meta name='twitter:url' content='' />
+  <meta property='og:url' content='' />
+  <meta name='twitter:title' content='June Maptime: Intro to Geospatial Data Formats' />
+  <meta property='og:title' content='June Maptime: Intro to Geospatial Data Formats' />
+  <meta name='twitter:description' content='This month we’ll start to venture through the weeds of geospatial data–the containers of geographic information. We’ll explore the main data types and discover how they compare. Some questions we’ll...' />
+  <meta property='og:description' content='This month we’ll start to venture through the weeds of geospatial data–the containers of geographic information. We’ll explore the main data types and discover how they compare. Some questions we’ll...' />
+  
+  <title>MaptimeDC | June Maptime: Intro to Geospatial Data Formats</title>
+  <link rel='stylesheet' href='/dc/site.css' type='text/css'/>
+  <link rel='shortcut icon' href='/dc/img/favicon.png' type='image/x-icon' />
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
+</head>
+<body>
+  <div class='masthead fill-blue'>
+    <div class='fill-darken0 pad1y strong dark'>
+      <div class='limiter'>
+        <a href='http://maptime.io/'>maptime.io</a>
+      </div>
+    </div>
+  </div>
+  <header class='fill-chapter'>
+    <div class='limiter contain'>
+      <a href='/dc/' class='sprite maptime pin-left'>Maptime</a>
+      <div class='col12 clearfix pad2y'>
+        <div class='round pad2 col6 margin6 strong dark fill-darken0 fill-green row4 truncate contain'>
+          <h1><a class='dark contain z1' href='/dc/'>MaptimeDC</a></h1>
+          <div class='pin-right pad4x pad1y hide-mobile'>
+            <span class='sprite marker'></span>
+          </div>
+          <a href='https://twitter.com/MaptimeDC/' class='contain z1 fill-blue button'>
+            @MaptimeDC on Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class='limiter pad4y'>
+    <div class='col12 clearfix'>
+      <aside class='col3 fr space-bottom2 sidebar'>
+        <div class='fill-purple strong dark round pad2 space-bottom2'>
+          <h3>The next MaptimeDC is:</h3>
+          <div id='rsvpdate'></div>
+        </div>
+
+        <div class='hide-mobile'>
+          <div class='popup-group'>
+            <a href='https://github.com/maptime/dc/' class='col12 space-bottom2 button'>Watch these events</a>
+            <div class='popup popup-big keyline-all pad1 small round'>
+              <ol class='space-bottom1'>
+                <li>1. Click the <strong>Watch these events</strong> button.</li>
+                <li>2. Login to GitHub or signup for an account.</li>
+                <li>3. Click the <strong>Watch</strong> button on the repo.</li>
+              </ol>
+              <div class='center'>
+                <img src='/dc/img/watchrepo.png' alt='Watch repo' />
+              </div>
+            </div>
+          </div>
+
+          <div class='followers'></div>
+          <div class='center'>
+            <div class='pad0y space-bottom2'>
+              <a class='small' href='https://github.com/maptime/dc/watchers'>View all</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class='col8 margin2r prose content'>
+        <h2>June Maptime: Intro to Geospatial Data Formats</h2>
+<p>This month we’ll start to venture through the weeds of geospatial data–the containers of geographic information. We’ll explore the main data types and discover how they compare.</p>
+
+<p>Some questions we’ll cover: What are the main differences between vector and raster data? What are the use cases for different types of data? What’s a shapefile and why does it have 4+ files within it? What’s best for web maps? How do we convert it? Where can I find this data in the first place?</p>
+
+<p>After this Maptime you’ll be well on your way to become a vector detector or a raster master!</p>
+
+<p>Beginners strongly encouraged! Please bring a laptop so we can get hands-on into the nitty gritty of geospatial data.</p>
+
+
+<div class='keyline-all round pad2 col12 clearfix'>
+  <div class='col8 pad0y'>
+    Join us: <span class='quiet'>Tuesday, Jun 23 2015</span>
+  </div>
+  <div class='col4'>
+    <a class='button fill-orange block' href='http://www.meetup.com/Maptime-DC/events/223133893/'>RSVP</a>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class='fill-light pad2y'>
+    <div class='limiter center small quiet'>
+      <p>This website is <a href='http://github.com/maptime/dc/'>open source</a> and you can improve it. Learn more about contributing <a href='https://guides.github.com/activities/forking/'>here</a>.</p>
+   </div>
+  </footer>
+
+<script src='/dc/js/jquery.min.js'></script>
+<script src='/dc/js/underscore.min.js'></script>
+<script src='/dc/site.js'></script>
+<script>
+  var rsvp = document.getElementById('rsvpdate');
+  var date,formatted,link;
+  ''
+    date = '2015,6,23';
+    formatted = 'Tuesday, Jun 23 2015';
+    link = 'http://www.meetup.com/Maptime-DC/events/223133893/';
+  ''
+
+  if (date && new Date().getTime() <= new Date(date).getTime() + (24 * 60 * 60 * 1000)) {
+    rsvp.innerHTML = '<h3>' + formatted + '</h3>' +
+    '<a class="button fill-orange block" href=' + link + '>RSVP</a>';
+  } else {
+    rsvp.innerHTML = '<h3>TBA</h3>';
+  }
+</script>
+
+</body>
+</html>
